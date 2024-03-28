@@ -66,3 +66,4 @@ async def get_course_info(dept_name: models.DepartmentName, course_name: str) ->
 @app.post("/departments/{dept_name}/courses", status_code=status.HTTP_201_CREATED)
 async def create_course(dept_name: models.DepartmentName, course: models.Course):
     departments[dept_name].courses.append(course)
+    return "Course Created Successfully"
