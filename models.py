@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from enum import Enum
+from pydantic import BaseModel
 
 
 class DepartmentName(Enum):
@@ -9,14 +10,12 @@ class DepartmentName(Enum):
     BIOLOGY = "Biology"
 
 
-@dataclass
-class Course:
+class Course(BaseModel):
     name: str
     level: int
     semester: str
 
 
-@dataclass
-class Department:
+class Department(BaseModel):
     name: DepartmentName
     courses: list[Course]
