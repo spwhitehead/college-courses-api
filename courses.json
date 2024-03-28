@@ -1,0 +1,100 @@
+{
+    "Computer Science": [
+        {
+            "name": "Introduction to Computer Science",
+            "level": 1410,
+            "semester": "Fall 2024"
+        },
+        {
+            "name": "Data Structures",
+            "level": 2420,
+            "semester": "Spring 2024"
+        },
+        {
+            "name": "Algorithms",
+            "level": 4540,
+            "semester": "Fall 2024"
+        },
+        {
+            "name": "Web Development",
+            "level": 1020,
+            "semester": "Fall 2024"
+        },
+        {
+            "name": "Discreet Structures",
+            "level": 2100,
+            "semester": "Fall 2024"
+        },
+        {
+            "name": "Linear Algebra",
+            "level": 2010,
+            "semester": "Fall 2024"
+        }
+    ],
+    "History": [
+        {
+            "name": "World History",
+            "level": 1010,
+            "semester": "Spring 2024"
+        },
+        {
+            "name": "American History",
+            "level": 2010,
+            "semester": "Fall 2024"
+        },
+        {
+            "name": "European History",
+            "level": 3010,
+            "semester": "Spring 2024"
+        },
+        {
+            "name": "History of Technology",
+            "level": 3200,
+            "semester": "Fall 2024"
+        }
+    ],
+    "Mathematics": [
+        {
+            "name": "Calculus I",
+            "level": 1010,
+            "semester": "Fall 2024"
+        },
+        {
+            "name": "Linear Algebra",
+            "level": 2010,
+            "semester": "Spring 2024"
+        },
+        {
+            "name": "Differential Equations",
+            "level": 3010,
+            "semester": "Fall 2024"
+        },
+        {
+            "name": "Probability and Statistics",
+            "level": 2100,
+            "semester": "Fall 2024"
+        }
+    ],
+    "Biology": [
+        {
+            "name": "General Biology",
+            "level": 1010,
+            "semester": "Spring 2024"
+        },
+        {
+            "name": "Cell Biology",
+            "level": 2010,
+            "semester": "Fall 2024"
+        },
+        {
+            "name": "Genetics",
+            "level": 3010,
+            "semester": "Spring 2024"
+        },
+        {
+            "name": "Microbiology",
+            "level": 2020,
+            "semester": "Fall 2024"
+        }
+    ]
+}
