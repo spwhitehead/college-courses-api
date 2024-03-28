@@ -61,3 +61,8 @@ async def get_course_info(dept_name: models.DepartmentName, course_name: str) ->
             return course
 
     raise HTTPException(status_code=404, detail="No course found")
+
+
+@app.post("/departments/{dept_name}/courses")
+async def create_course(dept_name: models.DepartmentName, course: models.Course):
+    departments[dept_name].courses.append(course)
