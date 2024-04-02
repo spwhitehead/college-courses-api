@@ -67,3 +67,20 @@ async def get_course_info(dept_name: models.DepartmentName, course_name: str) ->
 async def create_course(dept_name: models.DepartmentName, course: models.Course):
     departments[dept_name].courses.append(course)
     return "Course Created Successfully"
+
+
+@app.put("/departments/{department_name}/courses/{course_name}")
+async def update_course(dept_name: models.DepartmentName,
+                        course_name: str,
+                        updated_course: models.Course) -> str:
+    # Find the course
+    # Replace the course
+    # return saying "Course updated successfully"
+
+    for course_item in departments[dept_name].courses:
+        if course_item.name.casefold() == course_name.casefold():
+            course_item.name == course.name
+            course_item.level == course.level
+            course_item.semester == course.semester
+
+    return "Course Updated Successfully"
