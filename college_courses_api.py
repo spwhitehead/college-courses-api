@@ -84,5 +84,36 @@ async def update_course(dept_name: models.DepartmentName,
             course.name = updated_course.name
             course.level = updated_course.level
             course.semester = updated_course.semester
+            return "Course Updated Successfully"
 
-    return "Course Updated Successfully"
+    # Another Way:
+    # for i, course in enumerate(courses):
+            # if course.name.casefold() == course_name.casefold():
+            # courses[i] = updated_course
+            # return "Course updated successfully"
+
+    courses.append(update_course)
+    return "Course Created Successfully"
+
+
+@app.delete("/departments/{department_name}/courses/{course_name}")
+async def delete_course(dept_name: models.DepartmentName,
+                        course_name: str) -> str:
+    # Find the course
+    # Delete the course
+    # return saying "Course Deleted Successfully"
+
+    courses = departments[dept_name].courses
+
+    for course in courses:
+        if course.name.casefold() == course_name.casefold():
+            courses.remove(course)
+            return "Course Deleted Successfully"
+
+    # Another Way:
+    # for i, course in enumerate(courses):
+            # if course.name.casefold() == course_name.casefold():
+            # courses[i] = updated_course
+            # return "Course updated successfully"
+
+    return "No course with that name exists"
