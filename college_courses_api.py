@@ -77,10 +77,12 @@ async def update_course(dept_name: models.DepartmentName,
     # Replace the course
     # return saying "Course updated successfully"
 
-    for course_item in departments[dept_name].courses:
-        if course_item.name.casefold() == course_name.casefold():
-            course_item.name == course.name
-            course_item.level == course.level
-            course_item.semester == course.semester
+    courses = departments[dept_name].courses
+
+    for course in courses:
+        if course.name.casefold() == course_name.casefold():
+            course.name = updated_course.name
+            course.level = updated_course.level
+            course.semester = updated_course.semester
 
     return "Course Updated Successfully"
